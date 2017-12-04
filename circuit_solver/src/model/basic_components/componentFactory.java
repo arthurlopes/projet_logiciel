@@ -12,8 +12,8 @@ public class componentFactory {
             return new or(name, circuit);
         } else if (type == "AND") {
             return new and(name, circuit);
-        } else if (type == "XOR") {
-            return new or(name, circuit);
+        } else if (type == "NOR") {
+            return new nor(name, circuit);
         }
         return null;
     }
